@@ -15,4 +15,12 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpeg|jpg|svg|gif)$/i,
+        type: 'asset/resource',
+      }
+    ]
+  }
 };
