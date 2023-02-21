@@ -4,6 +4,7 @@ import createHome from './home/home';
 import createMenu from './menu/menu';
 
 const content = document.createElement('div');
+content.classList.add('content');
 
 function loadPage(pageCreator) {
   content.innerHTML = '';
@@ -18,6 +19,7 @@ function createHeader() {
     <ul>
       <li id="home">Home</li>
       <li id="menu">Menu</li>
+      <li id="logo">Burguer Paradise</li>
       <li id="about">About Us</li>
       <li id="contact">Contact</li>
     </ul>
@@ -31,3 +33,4 @@ function createHeader() {
 
 document.body.appendChild(createHeader());
 document.body.appendChild(content);
+loadPage(createHome);
