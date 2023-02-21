@@ -1,3 +1,5 @@
+import './style.css';
+
 import createHome from './home/home';
 import createMenu from './menu/menu';
 
