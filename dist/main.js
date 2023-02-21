@@ -26,7 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home/home */ \"./src/home/home.js\");\n\n\nconst content = document.createElement('div');\n\nfunction loadHome() {\n  content.innerHTML = '';\n  content.appendChild((0,_home_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n}\n\nfunction createHeader() {\n  const header = document.createElement('header');\n\n  header.innerHTML = `\n    <nav>\n    <ul>\n      <li id=\"home\">Home</li>\n    </ul>\n    </nav>\n  `;\n\n  header.querySelector('#home').addEventListener('click', loadHome);\n  return header;\n}\n\ndocument.body.appendChild(createHeader());\ndocument.body.appendChild(content);\n\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home/home */ \"./src/home/home.js\");\n/* harmony import */ var _menu_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu/menu */ \"./src/menu/menu.js\");\n\n\n\nconst content = document.createElement('div');\n\nfunction loadPage(pageCreator) {\n  content.innerHTML = '';\n  content.appendChild(pageCreator());\n}\n\nfunction createHeader() {\n  const header = document.createElement('header');\n\n  header.innerHTML = `\n    <nav>\n    <ul>\n      <li id=\"home\">Home</li>\n      <li id=\"menu\">Menu</li>\n      <li id=\"about\">About Us</li>\n      <li id=\"contact\">Contact</li>\n    </ul>\n    </nav>\n  `;\n\n  header.querySelector('#home').addEventListener('click', () => loadPage(_home_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"]));\n  header.querySelector('#menu').addEventListener('click', () => loadPage(_menu_menu__WEBPACK_IMPORTED_MODULE_1__[\"default\"]));\n  return header;\n}\n\ndocument.body.appendChild(createHeader());\ndocument.body.appendChild(content);\n\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu/menu.js":
+/*!**************************!*\
+  !*** ./src/menu/menu.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createMenu)\n/* harmony export */ });\nfunction createMenu() {\n  const menu = document.createElement('div');\n  menu.innerText = 'Menu';\n\n  return menu;\n}\n\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/menu.js?");
 
 /***/ })
 

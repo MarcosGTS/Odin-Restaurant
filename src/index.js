@@ -1,10 +1,11 @@
 import createHome from './home/home';
+import createMenu from './menu/menu';
 
 const content = document.createElement('div');
 
-function loadHome() {
+function loadPage(pageCreator) {
   content.innerHTML = '';
-  content.appendChild(createHome());
+  content.appendChild(pageCreator());
 }
 
 function createHeader() {
@@ -14,11 +15,15 @@ function createHeader() {
     <nav>
     <ul>
       <li id="home">Home</li>
+      <li id="menu">Menu</li>
+      <li id="about">About Us</li>
+      <li id="contact">Contact</li>
     </ul>
     </nav>
   `;
 
-  header.querySelector('#home').addEventListener('click', loadHome);
+  header.querySelector('#home').addEventListener('click', () => loadPage(createHome));
+  header.querySelector('#menu').addEventListener('click', () => loadPage(createMenu));
   return header;
 }
 
