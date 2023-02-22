@@ -140,13 +140,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 
 /***/ }),
 
+/***/ "./src/menu/lunchs.js":
+/*!****************************!*\
+  !*** ./src/menu/lunchs.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _lunch_1_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lunch_1.jpg */ \"./src/menu/lunch_1.jpg\");\n/* harmony import */ var _lunch_2_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lunch_2.jpg */ \"./src/menu/lunch_2.jpg\");\n/* harmony import */ var _lunch_3_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lunch_3.jpg */ \"./src/menu/lunch_3.jpg\");\n/* harmony import */ var _lunch_4_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lunch_4.jpg */ \"./src/menu/lunch_4.jpg\");\n\n\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([\n  {\n    img: _lunch_1_jpg__WEBPACK_IMPORTED_MODULE_0__,\n    name: 'Burguer',\n    price: 10,\n    description: 'Smoked turkey, extra bacon, jalapeño Havarti, red onion, tomato, romaine, avocado, chipotle mayo, on Dutch crunch.',\n  },\n  {\n    img: _lunch_2_jpg__WEBPACK_IMPORTED_MODULE_1__,\n    name: 'Burguer',\n    price: 10,\n    description: 'A burguer',\n  },\n  {\n    img: _lunch_3_jpg__WEBPACK_IMPORTED_MODULE_2__,\n    name: 'Burguer',\n    price: 10,\n    description: 'A burguer',\n  },\n  {\n    img: _lunch_4_jpg__WEBPACK_IMPORTED_MODULE_3__,\n    name: 'Burguer',\n    price: 10,\n    description: 'A burguer',\n  },\n]);\n\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/lunchs.js?");
+
+/***/ }),
+
 /***/ "./src/menu/menu.js":
 /*!**************************!*\
   !*** ./src/menu/menu.js ***!
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createMenu)\n/* harmony export */ });\nfunction createMenu() {\n  const menu = document.createElement('div');\n  menu.innerText = 'Menu';\n\n  return menu;\n}\n\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createMenu)\n/* harmony export */ });\n/* harmony import */ var _lunchs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lunchs */ \"./src/menu/lunchs.js\");\n\n\nfunction createLunchElement(lunch) {\n  const lunchCard = document.createElement('li');\n\n  lunchCard.innerHTML = `\n  <img>\n  <h4>${lunch.name}</h4>\n  <p>l${lunch.description}</p>\n  <div>${lunch.price}</div>\n  `;\n\n  const image = lunchCard.querySelector('img');\n  image.src = lunch.img;\n\n  return lunchCard;\n}\n\nfunction createMenu() {\n  const menu = document.createElement('div');\n  menu.innerHTML = `\n    <section>\n      <h2 id=\"burguers\">Burguers</h2>\n      <ul class=\"burguer-menu\"> \n      </ul>\n    </section>\n  `;\n\n  const burguerList = menu.querySelector('.burguer-menu');\n  _lunchs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].forEach((lunch) => {\n    const lunchCard = createLunchElement(lunch);\n    burguerList.appendChild(lunchCard);\n  });\n\n  return menu;\n}\n\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/menu.js?");
 
 /***/ }),
 
@@ -177,6 +187,46 @@ eval("module.exports = __webpack_require__.p + \"709650777d62d54f93c0.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"2800daf8cec934ba546f.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/home/burguer_image_full.jpg?");
+
+/***/ }),
+
+/***/ "./src/menu/lunch_1.jpg":
+/*!******************************!*\
+  !*** ./src/menu/lunch_1.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"d847f62640b03c7362d9.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/lunch_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/menu/lunch_2.jpg":
+/*!******************************!*\
+  !*** ./src/menu/lunch_2.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"e30297704efbb4362147.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/lunch_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/menu/lunch_3.jpg":
+/*!******************************!*\
+  !*** ./src/menu/lunch_3.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"efc58f0584d2ab90180c.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/lunch_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/menu/lunch_4.jpg":
+/*!******************************!*\
+  !*** ./src/menu/lunch_4.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"36f9722e24a456f6204d.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/lunch_4.jpg?");
 
 /***/ })
 
