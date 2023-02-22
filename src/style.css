@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   background-color: var(--secondary-color);
 
   width: 100%;
@@ -49,7 +49,8 @@ header li {
   border-radius: 4px; 
 }
 
-#logo {
+#logo,
+.home-splash h1 {
   font-family: "Lobster", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: transparent;
   color: var(--main-color);
@@ -67,29 +68,35 @@ header li {
   padding: 0 ;
 }
 
+.home-splash {
+  background: var(--main-color) url(./home/burguer_image_full.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+
+  display: grid;
+  place-content: center;
+}
+
+.home-splash h1 {
+  font-size: 4rem;
+  text-shadow: 4px 4px var(--secondary-color);
+}
+
+.home-menu {
+  background-color: var(--main-color);
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 .hero-section {
   display: grid;
   overflow: hidden;
   position: relative;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-}
-
-.hero-text::before {
-  content: "";
-  position: absolute;
-  
-  width: 200%;
-  height: 200%;
- 
-  top: -50%;
-  left: -50%;
-
-  background: url(./home/burguer_icon.png);
-  background-color: var(--secondary-color);
-  background-size: fill;
-
-  transform: scale(1.2) rotate(30deg);
-  z-index: -1;
 }
 
 .hero-image {
@@ -111,22 +118,43 @@ header li {
 
   border-radius: 4px;
 
-  padding: 1rem;
+  padding: 2rem;
+  margin: 2rem;
   gap: 1rem;
 }
 
-.hero-text h2 {
+.hero-text::before {
+  content: "";
+  position: absolute;
+  
+  width: 200%;
+  height: 200%;
+ 
+  top: -50%;
+  left: -50%;
+
+  background: url(./home/burguer_icon.png);
+  background-color: var(--secondary-color);
+  background-size: fill;
+
+  transform: scale(1.2) rotate(30deg);
+  z-index: -1;
+}
+
+.hero-text h2,
+.home-menu h2 {
   position: relative;
-  font-size: 2.5rem;
+  font-size: 2rem;
   
   text-decoration: underline;
 }
 
-.hero-text p{
+.hero-text p,
+.home-menu p {
   font-size: 1.25rem;
 }
 
-.hero-text button {
+button {
   justify-self: center;
   
   padding: .5rem 1.5rem;
@@ -141,10 +169,10 @@ header li {
   box-shadow: 4px 4px 0 0 black;
 }
 
-.hero-text button:hover {
+button:hover {
   transform: scale(1.1);
 }
 
-.hero-text button:active {
+button:active {
   transform: scale(.9);
 }
