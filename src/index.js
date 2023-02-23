@@ -18,10 +18,8 @@ function createHeader() {
     <nav>
     <ul>
       <li id="home">Home</li>
-      <li id="menu">Menu</li>
       <li id="logo">Burguer Paradise</li>
-      <li id="about">About Us</li>
-      <li id="contact">Contact</li>
+      <li id="menu">Menu</li>
     </ul>
     </nav>
   `;
@@ -31,6 +29,22 @@ function createHeader() {
   return header;
 }
 
+function createFooter() {
+  const footer = document.createElement('footer');
+
+  footer.innerHTML = `
+    <a href="https://github.com/MarcosGTS/" target="_blank">
+      Created by MarcosGTS 2023
+    </a>
+    <a href="https://www.highstdeli.com/" target="_blank">
+      Inspiration
+    </a>
+  `;
+
+  return footer;
+}
+
 document.body.appendChild(createHeader());
 document.body.appendChild(content);
-loadPage(createMenu);
+document.body.appendChild(createFooter());
+loadPage(createHome);

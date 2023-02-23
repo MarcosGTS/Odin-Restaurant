@@ -49,6 +49,23 @@ header li {
   border-radius: 4px; 
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--main-color);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+footer a:hover,
+header li:hover {
+  text-decoration: underline;
+}
+
 #logo,
 .home-splash h1 {
   font-family: "Lobster", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -179,7 +196,7 @@ button:active {
 }
 
 .menu-page {
-  padding-top: 2rem;
+  padding: 2rem 0;
   min-height: 100vh;
   background-color: #f7f7f7;
 }
@@ -188,17 +205,23 @@ button:active {
   color: var(--main-color);
   padding: 0 1rem;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
+}
+
+.menu + .menu {
+  margin-top: 2rem;
 }
 
 .menu h2 {
+  text-transform: capitalize;
   margin-bottom: 1rem;
 }
 
 .menu-grid {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 350px;
   gap: 20px;
 }
 
@@ -231,6 +254,7 @@ button:active {
   align-items: center;
   justify-content: space-between;
 
+  text-align: center;
   padding: 1rem;
 }
 
@@ -239,7 +263,7 @@ button:active {
 }
 
 .lunch-description {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .lunch-price {
