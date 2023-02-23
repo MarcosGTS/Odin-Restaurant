@@ -33,4 +33,4 @@ function createHeader() {
 
 document.body.appendChild(createHeader());
 document.body.appendChild(content);
-loadPage(createHome);
+loadPage(createMenu);

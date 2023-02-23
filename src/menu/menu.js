@@ -2,12 +2,15 @@ import lunchs from './lunchs';
 
 function createLunchElement(lunch) {
   const lunchCard = document.createElement('li');
+  lunchCard.classList.add('lunch-card');
 
   lunchCard.innerHTML = `
   <img>
-  <h4>${lunch.name}</h4>
-  <p>l${lunch.description}</p>
-  <div>${lunch.price}</div>
+  <div class="lunch-info">
+    <h4 class="lunch-name">${lunch.name}</h4>
+    <p class="lunch-description">l${lunch.description}</p>
+    <div class="lunch-price">${lunch.price}</div>
+  </div>
   `;
 
   const image = lunchCard.querySelector('img');
@@ -18,15 +21,17 @@ function createLunchElement(lunch) {
 
 export default function createMenu() {
   const menu = document.createElement('div');
+  menu.classList.add('menu-page');
+
   menu.innerHTML = `
-    <section>
+    <section class="menu">
       <h2 id="burguers">Burguers</h2>
-      <ul class="burguer-menu"> 
+      <ul id="burguer-menu" class="menu-grid"> 
       </ul>
     </section>
   `;
 
-  const burguerList = menu.querySelector('.burguer-menu');
+  const burguerList = menu.querySelector('#burguer-menu');
   lunchs.forEach((lunch) => {
     const lunchCard = createLunchElement(lunch);
     burguerList.appendChild(lunchCard);
