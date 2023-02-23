@@ -166,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"45c9df060167dd98a41f.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/home/burguer_1.jpg?");
+eval("module.exports = __webpack_require__.p + \"2710ed7443190c7edd71.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/home/burguer_1.jpg?");
 
 /***/ }),
 
@@ -186,7 +186,7 @@ eval("module.exports = __webpack_require__.p + \"709650777d62d54f93c0.png\";\n\n
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"2800daf8cec934ba546f.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/home/burguer_image_full.jpg?");
+eval("module.exports = __webpack_require__.p + \"81821af51c6deeeb206c.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/home/burguer_image_full.jpg?");
 
 /***/ }),
 
@@ -196,7 +196,7 @@ eval("module.exports = __webpack_require__.p + \"2800daf8cec934ba546f.jpg\";\n\n
   \******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"d847f62640b03c7362d9.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/lunch_1.jpg?");
+eval("module.exports = __webpack_require__.p + \"63e4af18ef9f8fad9294.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/lunch_1.jpg?");
 
 /***/ }),
 
@@ -206,7 +206,7 @@ eval("module.exports = __webpack_require__.p + \"d847f62640b03c7362d9.jpg\";\n\n
   \******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"e30297704efbb4362147.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/lunch_2.jpg?");
+eval("module.exports = __webpack_require__.p + \"ebd7223dcfaabe7fa899.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/lunch_2.jpg?");
 
 /***/ }),
 
@@ -216,7 +216,7 @@ eval("module.exports = __webpack_require__.p + \"e30297704efbb4362147.jpg\";\n\n
   \******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"efc58f0584d2ab90180c.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/lunch_3.jpg?");
+eval("module.exports = __webpack_require__.p + \"26bb5dfd41891f82f61d.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/lunch_3.jpg?");
 
 /***/ }),
 
@@ -226,7 +226,7 @@ eval("module.exports = __webpack_require__.p + \"efc58f0584d2ab90180c.jpg\";\n\n
   \******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"36f9722e24a456f6204d.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/lunch_4.jpg?");
+eval("module.exports = __webpack_require__.p + \"008917dd4d9002dcd68b.jpg\";\n\n//# sourceURL=webpack://odin-restaurant/./src/menu/lunch_4.jpg?");
 
 /***/ })
 
